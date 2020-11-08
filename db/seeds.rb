@@ -21,8 +21,8 @@ quizs = Quiz.create([
     description:"SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system, or for stream processing in a relational data stream management system."
   },
   {
-    title: "Ruby",
-    description:"Ruby is an interpreted, high-level, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro 'Matz' Matsumoto in Japan. Ruby is dynamically typed and uses garbage collection."
+    title: "Python",
+    description:"Python is an interpreted, high-level and general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. "
   },
   {
     title: "JavaScript",
@@ -227,6 +227,55 @@ questions = Question.create([
         answer_3: 'Some Sort Of Client Program To Access The Databases',
         answer_4: 'A Browser',
         quiz_id: 3
+      }
+])
+
+
+questions = Question.create([
+    {
+        question: 'What is a correct syntax to output "Hello World" in Python?',
+        correct_answer: 'print("Hello World")',
+        answer_1: 'console.log("Hello World")',
+        answer_2: 'echo("Hello World")',
+        answer_3: 'print("Hello World")',
+        answer_4: 'puts("Hello World") ',
+        quiz_id: 4
+      },
+      {
+        question: "What is the correct file extension for Python files?",
+        correct_answer:".py",
+        answer_1:".pyt",
+        answer_2:".python",
+        answer_3:".py",
+        answer_4:".pt",
+        quiz_id: 4
+      },
+      {
+        question: "What is the correct way to create a function in Python?",
+        correct_answer:"def myFunction():",
+        answer_1:"create myFunction():",
+        answer_2:"def myFunction():",
+        answer_3:"func myFunction():",
+        answer_4:"function.create myFunction",
+        quiz_id:4
+      },
+      {
+        question: "Which method can be used to remove any whitespace from both the beginning and the end of a string?",
+        correct_answer:"strip()",
+        answer_1:"trim()",
+        answer_2:"strip()",
+        answer_3:"chump()",
+        answer_4:"clear()",
+        quiz_id:4
+      },
+      {
+        question: "Which method can be used to return a string in upper case letters?",
+        correct_answer:"upper()",
+        answer_1:"to_uppercase()",
+        answer_2:"uppercase()",
+        answer_3:"upcase()",
+        answer_4:"upper()",
+        quiz_id:4
       }
 ])
 
