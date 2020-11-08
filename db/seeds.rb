@@ -10,86 +10,130 @@
 quizs = Quiz.create([
   {
     title: "HTML",
-    description:"HTML basic course"
+    description:"Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript. "
   },
   {
     title: "CSS",
-    description:"CSS basic course"
+    description:"Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript."
   },
   {
     title: "SQL",
-    description:"SQL basic course"
+    description:"SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system, or for stream processing in a relational data stream management system."
   },
   {
     title: "Ruby",
-    description:"Ruby basic course"
+    description:"Ruby is an interpreted, high-level, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro 'Matz' Matsumoto in Japan. Ruby is dynamically typed and uses garbage collection."
   },
   {
     title: "JavaScript",
-    description:"Javascript basic course"
+    description:"JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. "
   },
   {
     title: "React",
-    description:"React basic course"
-  }
+    description:"React is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications. "
+  },
+  {
+    title: "Bash",
+    description:"Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell. First released in 1989, it has been used as the default login shell for most Linux distributions and all releases of Apple's macOS prior to macOS Catalina."
+  },
+  
 ])
 
 
 questions = Question.create([
   {
-    question: "HTML",
-    correct_answer:"HTML basic course",
-    answer_1:"HTML basic courseasdafa",
-    answer_2:"HTML basic course",
-    answer_3:"HTML basic courseasasfaf",
-    answer_4:"HTML basic courseasdasfafa",
+    question: "What does HTML stand for?",
+    correct_answer:"Hyper Text Markup Language",
+    answer_1:"Hyperlinks and Text Markup Language",
+    answer_2:"Hyper Text Markup Language",
+    answer_3:"Home Tool Markup Language",
+    answer_4:"Hyper Telephone Markup Language",
     quiz_id:1
   },
   {
-    question: "HTML",
-    correct_answer:"HTML basic course",
-    answer_1:"HTML basic courseasfasfa",
-    answer_2:"HTML basic courseasfasf",
-    answer_3:"HTML basic courseasdafs",
-    answer_4:"HTML basic course",
+    question: "Who is making the Web standards?",
+    correct_answer:"The World Wide Web Consortium",
+    answer_1:"Google",
+    answer_2:"Microsoft",
+    answer_3:"The World Wide Web Consortium",
+    answer_4:"CIA",
     quiz_id:1
   },
   {
-    question: "HTML",
-    correct_answer:"HTML basic course",
-    answer_1:"HTML basic courseasfafaf",
-    answer_2:"HTML basic courseasafs",
-    answer_3:"HTML basic course",
-    answer_4:"HTML basic courseasdafsaf",
+    question: "Choose the correct HTML element for the largest heading:",
+    correct_answer:"<h1>",
+    answer_1:"<heading>",
+    answer_2:"<h9>",
+    answer_3:"<h10>",
+    answer_4:"<h1>",
     quiz_id:1
   },
   {
-    question: "HTML",
-    correct_answer:"HTML basic course",
-    answer_1:"HTML basic coursefasfasf",
-    answer_2:"HTML basic course",
-    answer_3:"HTML basic courseasafsa",
-    answer_4:"HTML basic courseasfafafs",
+    question: "What is the correct HTML element for inserting a line break?",
+    correct_answer:"<br>",
+    answer_1:"<break>",
+    answer_2:"<b>",
+    answer_3:"<makebreak>",
+    answer_4:"<br>",
     quiz_id:1
   },
   {
-    question: "HTML",
-    correct_answer:"HTML basic course",
-    answer_1:"HTML basic coursessdfsdfsf",
-    answer_2:"HTML basic course",
-    answer_3:"HTML basic coursesdfsfd",
-    answer_4:"HTML basic course sdfsfd",
-    quiz_id:1
-  },
-  {
-    question: "HTML",
-    correct_answer:"HTML basic course",
-    answer_1:"HTML basic course",
-    answer_2:"HTML basic course not",
-    answer_3:"HTML basic course not",
-    answer_4:"HTML basic course not",
+    question: "Choose the correct HTML element to define important text",
+    correct_answer:"<strong>",
+    answer_1:"<important>",
+    answer_2:"<strong>",
+    answer_3:"<i>",
+    answer_4:"<highlight>",
     quiz_id:1
   }
+])
+
+questions = Question.create([
+    {
+        question: 'What does CSS stand for?',
+        correct_answer: 'Cascading Style Sheets  ',
+        answer_1: 'Computer Style Sheets  ',
+        answer_2: 'Colorful Style Sheets',
+        answer_3: 'Cascading Style Sheets  ',
+        answer_4: 'Creative Style Sheets',
+        quiz_id: 2
+      },
+      {
+        question: "Who is making the Web standards?",
+        correct_answer:"The World Wide Web Consortium",
+        answer_1:"Google",
+        answer_2:"Microsoft",
+        answer_3:"The World Wide Web Consortium",
+        answer_4:"CIA",
+        quiz_id: 2
+      },
+      {
+        question: "Choose the correct HTML element for the largest heading:",
+        correct_answer:"<h1>",
+        answer_1:"<heading>",
+        answer_2:"<h9>",
+        answer_3:"<h10>",
+        answer_4:"<h1>",
+        quiz_id:2
+      },
+      {
+        question: "What is the correct HTML element for inserting a line break?",
+        correct_answer:"<br>",
+        answer_1:"<break>",
+        answer_2:"<b>",
+        answer_3:"<makebreak>",
+        answer_4:"<br>",
+        quiz_id:2
+      },
+      {
+        question: "Choose the correct HTML element to define important text",
+        correct_answer:"<strong>",
+        answer_1:"<important>",
+        answer_2:"<strong>",
+        answer_3:"<i>",
+        answer_4:"<highlight>",
+        quiz_id:2
+      }
 ])
 
 
@@ -188,54 +232,41 @@ questions = Question.create([
 
 
 
-# questions = Question.create([
-#     {
-#         question: '#!/bin/bash is commonly called as',
-#         correct_answer: 'shebang',
-#         answer_1: 'shebang',
-#         answer_2: 'hashbang',
-#         answer_3: 'Script Initialiser',
-#         answer_4: 'None of the Above',
-#         quiz_id: 18
-#       },
-#       {
-#         question: 'Which command can you use to re-execute a previous command?',
-#         correct_answer: '!!',
-#         answer_1: '!cat',
-#         answer_2: '!!',
-#         answer_3: '!a',
-#         answer_4: '!3',
-#         quiz_id: 18
-#       },
-#       {
-#         question: 'How can you set the default rwx permission to all users on every file which is created in the current shell?',
-#         correct_answer: 'umask  0777',
-#         answer_1: 'umask  0777',
-#         answer_2: 'chmod  777',
-#         answer_3: 'chown  777',
-#         answer_4: 'umask  0666',
-#         quiz_id: 18
-#       },
-#       {
-#         question: 'How to list the contents of a folder?',
-#         correct_answer: 'ls',
-#         answer_1: 'pwd',
-#         answer_2: 'ls',
-#         answer_3: 'list',
-#         answer_4: 'print',
-#         quiz_id: 18
-#       }
-# ])
-
-
-# questions = Question.create([
-#     {
-#         question: 'What does CSS stand for?',
-#         correct_answer: 'Cascading Style Sheets  ',
-#         answer_1: 'Computer Style Sheets  ',
-#         answer_2: 'Colorful Style Sheets',
-#         answer_3: 'Cascading Style Sheets  ',
-#         answer_4: 'Creative Style Sheets',
-#         quiz_id: 2
-#       }
-# ])
+questions = Question.create([
+    {
+        question: '#!/bin/bash is commonly called as',
+        correct_answer: 'shebang',
+        answer_1: 'shebang',
+        answer_2: 'hashbang',
+        answer_3: 'Script Initialiser',
+        answer_4: 'None of the Above',
+        quiz_id: 6
+      },
+      {
+        question: 'Which command can you use to re-execute a previous command?',
+        correct_answer: '!!',
+        answer_1: '!cat',
+        answer_2: '!!',
+        answer_3: '!a',
+        answer_4: '!3',
+        quiz_id: 6
+      },
+      {
+        question: 'How can you set the default rwx permission to all users on every file which is created in the current shell?',
+        correct_answer: 'umask  0777',
+        answer_1: 'umask  0777',
+        answer_2: 'chmod  777',
+        answer_3: 'chown  777',
+        answer_4: 'umask  0666',
+        quiz_id: 6
+      },
+      {
+        question: 'How to list the contents of a folder?',
+        correct_answer: 'ls',
+        answer_1: 'pwd',
+        answer_2: 'ls',
+        answer_3: 'list',
+        answer_4: 'print',
+        quiz_id: 6
+      }
+])
