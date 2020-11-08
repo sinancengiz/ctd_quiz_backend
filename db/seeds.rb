@@ -29,10 +29,6 @@ quizs = Quiz.create([
     description:"JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. "
   },
   {
-    title: "React",
-    description:"React is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications. "
-  },
-  {
     title: "Bash",
     description:"Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell. First released in 1989, it has been used as the default login shell for most Linux distributions and all releases of Apple's macOS prior to macOS Catalina."
   },
@@ -280,6 +276,53 @@ questions = Question.create([
 ])
 
 
+questions = Question.create([
+    {
+        question: 'Inside which HTML element do we put the JavaScript?',
+        correct_answer: '<script>',
+        answer_1: 'jscript',
+        answer_2: '<js>',
+        answer_3: '<javascript>',
+        answer_4: '<script>',
+        quiz_id: 5
+      },
+      {
+        question: "How do you create a function in JavaScript?",
+        correct_answer:"function myFunction() ",
+        answer_1:"def myFunction() ",
+        answer_2:"create function myFunction() ",
+        answer_3:"function myFunction() ",
+        answer_4:"doFunction myFunction() ",
+        quiz_id: 5
+      },
+      {
+        question: "What is the correct way to write a JavaScript array?",
+        correct_answer:'var colors = ["red", "green", "blue"]',
+        answer_1:'var colors = "red", "green", "blue"',
+        answer_2: 'var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")',
+        answer_3:'var colors = ["red", "green", "blue"]',
+        answer_4:'var colors = (1:"red", 2:"green", 3:"blue")',
+        quiz_id:5
+      },
+      {
+        question: "How do you round the number 7.25, to the nearest integer?",
+        correct_answer:"Math.round(7.25)",
+        answer_1:"round(7.25) ",
+        answer_2:"Math.round(7.25)",
+        answer_3:"Round(7.25) ",
+        answer_4:"Number.round(7.25)",
+        quiz_id:5
+      },
+      {
+        question: "Which operator is used to assign a value to a variable?",
+        correct_answer:"=",
+        answer_1:"-",
+        answer_2:"=",
+        answer_3:"+",
+        answer_4:"&",
+        quiz_id:5
+      }
+])
 
 questions = Question.create([
     {
