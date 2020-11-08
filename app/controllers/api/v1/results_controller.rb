@@ -10,7 +10,7 @@ class Api::V1::ResultsController < ApplicationController
 
     # GET /maxresults
     def maxresults
-      @maxresults = @user.results.group(:quiz_id).maximum
+      @maxresults = @user.results.group("quiz_name").maximum("score")
       json_response(@maxresults)
     end
 
