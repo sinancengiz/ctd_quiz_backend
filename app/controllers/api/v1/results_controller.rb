@@ -8,6 +8,12 @@ class Api::V1::ResultsController < ApplicationController
     json_response(@results)
   end
 
+    # GET /maxresults
+    def maxresults
+      @maxresults = @user.results.group(:quiz_id).maximum
+      json_response(@maxresults)
+    end
+
   # POST /results
   def create
     @result = Result.create!(result_params)

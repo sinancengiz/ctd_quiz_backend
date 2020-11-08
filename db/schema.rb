@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2020_11_07_230419) do
 
   create_table "results", force: :cascade do |t|
     t.string "quiz_name"
-    t.string "score"
+    t.integer "score"
     t.bigint "quiz_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

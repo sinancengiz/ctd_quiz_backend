@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
        resources:users do
+        get 'maxresults', to: 'results#maxresults'
         resources :results
        end
        resources :quizs do
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
     end
   end
 
+  # get 'maxresults', to: 'results#maxresults'
   post 'auth/login', to: 'authentication#authenticate'
   post 'signup', to: 'users#create'
   
