@@ -99,39 +99,39 @@ questions = Question.create([
         quiz_id: 2
       },
       {
-        question: "Who is making the Web standards?",
-        correct_answer:"The World Wide Web Consortium",
-        answer_1:"Google",
-        answer_2:"Microsoft",
-        answer_3:"The World Wide Web Consortium",
-        answer_4:"CIA",
+        question: "Where in an HTML document is the correct place to refer to an external style sheet?",
+        correct_answer:"In the <head> section  ",
+        answer_1:"In the <body> section",
+        answer_2:"In the <head> section  ",
+        answer_3:"At the end of the document",
+        answer_4:"None of above is correct",
         quiz_id: 2
       },
       {
-        question: "Choose the correct HTML element for the largest heading:",
-        correct_answer:"<h1>",
-        answer_1:"<heading>",
-        answer_2:"<h9>",
-        answer_3:"<h10>",
-        answer_4:"<h1>",
+        question: "How do you insert a comment in a CSS file?",
+        correct_answer:"/* this is a comment */  ",
+        answer_1:"--comment-- this is a comment",
+        answer_2:"--/ this is a comment /--  ",
+        answer_3:"// this is a comment  ",
+        answer_4:"/* this is a comment */  ",
         quiz_id:2
       },
       {
-        question: "What is the correct HTML element for inserting a line break?",
-        correct_answer:"<br>",
-        answer_1:"<break>",
-        answer_2:"<b>",
-        answer_3:"<makebreak>",
-        answer_4:"<br>",
+        question: "Which property is used to change the background color?",
+        correct_answer:"background-color ",
+        answer_1:"bcolor",
+        answer_2:"setBackground",
+        answer_3:"background-color ",
+        answer_4:"color",
         quiz_id:2
       },
       {
-        question: "Choose the correct HTML element to define important text",
-        correct_answer:"<strong>",
-        answer_1:"<important>",
-        answer_2:"<strong>",
-        answer_3:"<i>",
-        answer_4:"<highlight>",
+        question: "Which CSS property controls the text size?",
+        correct_answer:"font-size",
+        answer_1:"text-size",
+        answer_2:"text-style",
+        answer_3:"font-size",
+        answer_4:"font-style",
         quiz_id:2
       }
 ])
