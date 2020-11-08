@@ -4,7 +4,7 @@ class User < ApplicationRecord
 
   # model association
   has_many :results, dependent: :destroy
-
+  has_many :asignedquizs, dependent: :destroy
   # Validations
   validates_presence_of :name, :email, :password_digest
 end
