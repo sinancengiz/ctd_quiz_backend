@@ -1,11 +1,16 @@
 class Api::V1::AsignedquizsController < ApplicationController
-    before_action :set_user
+    before_action :set_user, except:  [:assignments]
     before_action :set_user_asignedquiz, only: [:show, :update, :destroy]
 
   # GET /asignedquizs
   def index
     @asignedquizs = @user.asignedquizs
     json_response(@asignedquizs)
+  end
+
+  def assignments
+    @assignments = Asignedquiz.all
+    json_response(@assignments)
   end
 
   # POST /asignedquizs
