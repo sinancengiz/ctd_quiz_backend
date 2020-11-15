@@ -15,7 +15,7 @@ class Api::V1::AsignedquizsController < ApplicationController
 
   # POST /asignedquizs
   def create
-    @asignedquiz = asignedquiz.create!(asignedquiz_params)
+    @asignedquiz = Asignedquiz.create!(asignedquiz_params)
     json_response(@asignedquiz, :created)
   end
 
