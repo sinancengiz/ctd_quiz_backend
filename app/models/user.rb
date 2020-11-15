@@ -7,4 +7,7 @@ class User < ApplicationRecord
   has_many :asignedquizs, dependent: :destroy
   # Validations
   validates_presence_of :name, :email, :password_digest
+  validates :name, uniqueness: true
+  validates :email, uniqueness: true
+
 end
