@@ -10,7 +10,7 @@ class UsersController < ApplicationController
         response = { message: Message.account_created, auth_token: auth_token }
         json_response(response, :created)
       else
-        response = { message: Message.account_exist }
+        response = { message: Message.account_exist}
         json_response(response)
       end
 
